@@ -282,32 +282,6 @@ However, all four prioritized candidates were outside both the classification an
 - The prioritized external candidates were outside the models' applicability domains.
 - Experimental validation is required before any compound can be considered a reliable Mac1 inhibitor.
 
-## Suggested Repository Structure
-
-```text
-.
-├── data/
-│   ├── raw/
-│   ├── processed/
-│   └── prediction/
-├── notebooks/
-├── scripts/
-│   ├── data_preprocessing.py
-│   ├── feature_generation.py
-│   ├── train_classification.py
-│   ├── train_regression.py
-│   └── predict_external_compounds.py
-├── models/
-│   ├── classification_model.joblib
-│   └── regression_model.joblib
-├── results/
-│   ├── classification_metrics/
-│   ├── regression_metrics/
-│   └── external_screening/
-├── README.md
-└── requirements.txt
-```
-
 ## Software and Libraries
 
 The machine-learning workflow used Python-based cheminformatics and machine-learning tools, including:
@@ -324,45 +298,6 @@ The machine-learning workflow used Python-based cheminformatics and machine-lear
 - Seaborn
 - Joblib
 
-## How to Run
-
-> Note: Update script names and file paths according to the final repository structure.
-
-### 1. Install dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-### 2. Preprocess the ChEMBL dataset
-
-```bash
-python scripts/data_preprocessing.py
-```
-
-### 3. Generate molecular features
-
-```bash
-python scripts/feature_generation.py
-```
-
-### 4. Train the classification model
-
-```bash
-python scripts/train_classification.py
-```
-
-### 5. Train the regression model
-
-```bash
-python scripts/train_regression.py
-```
-
-### 6. Apply models to external approved compounds
-
-```bash
-python scripts/predict_external_compounds.py
-```
 
 ## Conclusion
 
